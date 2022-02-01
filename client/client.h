@@ -29,7 +29,7 @@ public:
 
     // This sets the message to be sent to the server. It does not 
     // send it though
-    int setSendContents(std::string);
+    void setSendContents(std::string);
 
     // this sends the message set by the setSendContents function
     int sendMessage();

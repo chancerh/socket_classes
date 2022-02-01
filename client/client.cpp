@@ -34,8 +34,9 @@ int Client::makeConnection() {
     return 0;
 }
 
-int Client::setSendContents(std::string sendContents) {
-    this->sendContents = sendContents;
+void  Client::setSendContents(std::string sendContents) {
+  this->sendContents = sendContents;
+  
 }
 
 int Client::sendMessage() {
@@ -51,6 +52,7 @@ int Client::recieveResponseContents() {
     valread = read( sock , buffer, bufferSize);
     std::string str(buffer);
 	responseContents = str;
+    return 0;
 
 }
 
