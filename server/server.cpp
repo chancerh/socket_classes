@@ -65,7 +65,7 @@ int Server::startListen() {
 	std::string str(buffer);
 	readContents = str;
 	// delete buffer after finished listening. 
-	delete buffer;
+	delete[] buffer;
     return 0;
 }
 
@@ -83,4 +83,5 @@ std::string Server::getReadContents() {
 void Server::setSendContents(std::string sendContents) {
 	this->sendContents = sendContents;
 }
+
 
