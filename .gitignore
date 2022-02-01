@@ -1,0 +1,7 @@
+*.o
+*.O
+server/.vscode
+client/.vscode
+driver
+pingPongClient
+*.gch
