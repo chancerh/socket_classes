@@ -41,5 +41,6 @@ int main() {
         std::cout << "Server Response:" << respns << std::endl;
     } while (input == "ping");
 
+    client->closeSocket();
 
 }

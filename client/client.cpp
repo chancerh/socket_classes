@@ -56,6 +56,11 @@ int Client::recieveResponseContents() {
 
 }
 
+int Client::closeSocket() {
+  close(sock);
+  return 0;
+}
+
 std::string Client::getResponseContents() {
     return responseContents;
 }

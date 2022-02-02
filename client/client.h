@@ -39,7 +39,9 @@ public:
     int recieveResponseContents();
 
     // This gets the stored server response
-    std::string getResponseContents();
+  std::string getResponseContents();
+
+  int closeSocket();
     
 };
 #endif
